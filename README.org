@@ -1,61 +1,10 @@
-#+title: Submodule: Udemy Clone with Bootstrap and SCSS
+#+title: Submodule: GuitarStore with Bootstrap and SCSS
 
 * About
-This is submodule of my studying notes which were released as a public project in order to show it as part of a bigger portfolio, in this submodule I portrait the fourth website design I learned to create by following the tutorial in the Bootstrap course made by the Mexican programmer and designer Juan Pablo De la torre Valdez in Udemy.
-+ Course Name: Boostrap 5 y SASS - La Guia practica - Crea 10 sitios
+This is submodule of my studying notes which were released as a public project in order to show it as part of a bigger portfolio, in this submodule I portrait the fifth website design I learned to create by following the tutorial in the Bootstrap course made by the Mexican programmer and designer Juan Pablo De la torre Valdez in Udemy.
++ Course Name: Boostrap 5 y SASS - La Guia practica - Crea 10 sitios (although they are currently only 5)
 
 * Deployment
-[[https://xandro2021.github.io/UdemyCloneBootstrapSASS/][Github Pages Link]]
+[[https://xandro2021.github.io/BootstrapGuitarStore/][Github Pages Link]]
 
 * Interesting things learned in this Project
-** Modify custom bootstrap variables
-+ You can find all the modified values at _custom.scss
-+ It is a way to change the default values in bootstrap variables, it will help to change the default appearance and save time and code in order to get your desired design
-** Modify Margins or Paddins
-+ In order to modify the default margins or paddings in bootstrap is necessary to look for $spacers in _variables.scss
-** Modify Bootstrap Grid (Row-Cols)
-+ The mixin to add the .row behaviour is called make-row
-+ The mixin to add the .col behaviour is called make-col-ready
-+ The mixin to modify the column grid from its default -12 is called make-col
-#+begin_src scss
-.listado-cursos {
-    @include make-row;
-
-    .curso {
-        @include make-col-ready;
-
-        @include media-breakpoint-up(sm) {
-            // Create two columns where every element will required one column
-            @include make-col(1, 2);
-        }
-
-        @include media-breakpoint-up(md) {
-            // Create three columns where every element will require one column
-            @include make-col(1, 3);
-        }
-
-        @include media-breakpoint-up(lg) {
-            // Create five columns where every element will require one column
-            @include make-col(1, 5);
-        }
-    }
-}
-#+end_src
-** New Grid in Bootstrap
-+ There is a new bootstrap class alternative to d-grid that came its own subclasses that result in a similar behaviour than the default row/col system and more complex than the default d-grid
-+ You must activate before being able to use by using the variable
-#+begin_src scss
-$enable-cssgrid: true;
-#+end_src
-+ It contains some subclasses for its children and the behaviour is exactly as the default row/col bootstrap system but using grid-layout instead of flexbox
-  + g-col-6, g-col-md-4, g-col-lg-3
-#+begin_src html
-            <li class="g-col-6 g-col-md-4 g-col-lg-3">
-                <a href="#" class="text-decoration-none">
-                    <div class="bg-light">
-                        <img class="img-fluid" alt="Imagen Icono" src="build/img/iconos-08.png" />
-                    </div>
-                    <p class="fw-bold mt-2">Musica</p>
-                </a>
-            </li>
-#+end_src
