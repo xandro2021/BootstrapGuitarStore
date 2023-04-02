@@ -10811,3 +10811,11 @@ textarea.form-control-lg {
 .navegacion a:hover {
   background-color: #e99401;
 }
+
+.cursos {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cursos_bg.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
