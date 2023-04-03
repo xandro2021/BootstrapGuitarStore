@@ -8,3 +8,34 @@ This is submodule of my studying notes which were released as a public project i
 [[https://xandro2021.github.io/BootstrapGuitarStore/][Github Pages Link]]
 
 * Interesting things learned in this Project
+** Remember the default Bootstrap classes to style forms
++ form-group
++ form-label
++ form-control
+#+begin_src html
+<form class="row" method="" action="">
+    <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="">Cantidad:</label>
+            <select class="form-control" id="" name="">
+                <option value="">-- Seleccione --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12 d-grid">
+        <input class="btn btn-primary text-white text-uppercase fs-6 mt-4 d-block" type="submit" name=""
+            value="Agregar al Carrito" />
+    </div>
+</form>
+#+end_src

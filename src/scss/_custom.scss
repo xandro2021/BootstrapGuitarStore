@@ -34,6 +34,16 @@ $link-decoration: none;
 $card-border-radius: 0;
 $card-border-width: 0;
 
+// Inputs
+$input-border-radius: 1rem;
+$input-border-color: $dark;
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 
 .fw-black {
